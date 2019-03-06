@@ -1,5 +1,8 @@
-from pycota import logger
 
-LOG_ = logger.getLogger()
+def testMain():
 
-LOG_.info("Hello from main_test")
+	pass
+
+
+if __name__ == '__main__':
+	testMain()
