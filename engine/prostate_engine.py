@@ -5,10 +5,6 @@ from metastasis import cleanM
 from psa import cleanPSA
 from grade_group import cleanGradeGroup
 
-LOG_ = logger.getLogger() 
-
-LOG_.info("Hello world!")
-
 def cleanAll(t, n, m, psa, gg):
 	tCleaned = cleanT(t)
 	nCleaned = cleanN(n)
