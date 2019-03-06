@@ -5,7 +5,7 @@ def cleanGradeGroup(gg):
 	'''
 	try: 
 		res0 = int(gg.strip())
-		assert((res0 >= 1) && (res0 <= 5)), "Casted GG value must be between 1 and 5 inclusive"
+		assert((res0 >= 1) & (res0 <= 5)), "Casted GG value must be between 1 and 5 inclusive"
 		return res0
 	except Exception as e:
 		raise e
