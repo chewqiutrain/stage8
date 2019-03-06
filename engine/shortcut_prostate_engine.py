@@ -83,18 +83,27 @@ def loadAJCC():
 	return dfCombined
 
 
+def prostate_engine(t,n,m,psa,gg,lookup):
+	'''
+	:param lookup: AJCC dataframe 
+	'''
+	
+
+	# map / clean t,n,m,psa,gg.
+	# used cleaned values to lookup into dfLookup
+
+	result = 'hello'# find row where t,n,m,psa,gg in lookup 
+	return result
+
+
 def main():
 	t = 't'
 	n = 'n'
 	m = 'm'
 	psa = '100'
 	gg = '3'
-
-	dfLookup = loadAJCC()
-
-	# map / clean t,n,m,psa,gg.
-	# used cleaned values to lookup into dfLookup
-	
+	lookupDF = loadAJCC()
+	result = prostate_engine(t,n,m,psa,gg, lookupDF)
 
 
 if __name__ == '__main__':
